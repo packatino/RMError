@@ -6,6 +6,9 @@ The best way to use RMError is via [CocoaPods](https://cocoapods.org/) by adding
 >     pod 'RMError'
 
 ## Use RMError
+To use RMError you have to import the NSError+RMError.h category:
+>     #import <NSError+RMError.h>
+
 The simplest way to create an NSError object looks like this:
 >     NSError *error = RMErrorCreate(@"My error message.");
 
