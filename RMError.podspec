@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RMError"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Makes creating NSError objects easier than ever before!"
 
   s.description  = <<-DESC
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/packatino/RMError.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/packatino/RMError.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
