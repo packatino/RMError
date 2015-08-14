@@ -1,5 +1,5 @@
 # RMError
-[![Build Status](https://travis-ci.org/packatino/RMError.svg?branch=Travis)](https://travis-ci.org/packatino/RMError)
+[![Build Status](https://travis-ci.org/packatino/RMError.svg?branch=master)](https://travis-ci.org/packatino/RMError)
 
 Makes creating NSError objects easier than ever before!
 
