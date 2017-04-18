@@ -14,7 +14,7 @@ FOUNDATION_EXPORT NSError * RMErrorCreate(NSString *errorDescription);
 
 
 extern NSString * const RMErrorDomainDefault;
-extern NSUInteger const RMErrorCodeDefault;
+extern NSInteger const RMErrorCodeDefault;
 
 
 /**
@@ -25,20 +25,20 @@ extern NSUInteger const RMErrorCodeDefault;
 /**
  Creates and initializes an NSError object for a given domain, code and description. The <code>description</code> parameter is what will be accessable as <code>error.localizedDescription</code>. If the domain is nil then <code>RMErrorDomainDefault</code> is used as domain.
  */
-+ (instancetype)errorWithCode:(NSUInteger)code
++ (instancetype)errorWithCode:(NSInteger)code
                   description:(NSString *)description
                        domain:(NSString *)domain;
 
 /**
  Creates and initializes an NSError object for a given code and description. The <code>description</code> parameter is what will be accessable as <code>error.localizedDescription</code>. The domain of this error will be <code>RMErrorDomainDefault</code>.
  */
-+ (instancetype)errorWithCode:(NSUInteger)code
++ (instancetype)errorWithCode:(NSInteger)code
                   description:(NSString *)description;
 
 /**
  Creates an error with an error code and <code>RMErrorDomainDefault</code> as domain. The discription will be empty.
  */
-+ (instancetype)errorWithCode:(NSUInteger)code;
++ (instancetype)errorWithCode:(NSInteger)code;
 
 /**
  Creates an error with a localizedDescription and <code>RMErrorDomainDefault</code> as domain. The error code will be <code>RMErrorCodeDefault</code>.
