@@ -16,14 +16,14 @@ FOUNDATION_EXTERN NSError * RMErrorCreate(NSString *errorDescription)
 
 
 NSString * const RMErrorDomainDefault = @"RMErrorDomainDefault";
-NSUInteger const RMErrorCodeDefault = 0;
+NSInteger const RMErrorCodeDefault = 0;
 
 
 @implementation NSError (RMError)
 
 #pragma mark - Factory methods
 
-+ (instancetype)errorWithCode:(NSUInteger)code
++ (instancetype)errorWithCode:(NSInteger)code
                   description:(NSString *)description
                        domain:(NSString *)domain
 {
@@ -46,7 +46,7 @@ NSUInteger const RMErrorCodeDefault = 0;
 }
 
 
-+ (instancetype)errorWithCode:(NSUInteger)code
++ (instancetype)errorWithCode:(NSInteger)code
                   description:(NSString *)description
 {
     return [NSError errorWithCode:code
@@ -55,7 +55,7 @@ NSUInteger const RMErrorCodeDefault = 0;
 }
 
 
-+ (instancetype)errorWithCode:(NSUInteger)code
++ (instancetype)errorWithCode:(NSInteger)code
 {
     return [NSError errorWithCode:code
                       description:nil
